@@ -1,13 +1,19 @@
 <script>
   import Navbar from "$lib/Navbar.svelte";
+  import Stay from "$lib/Stay.svelte";
 </script>
 
 <div id="app-container">
   <Navbar />
-  <h1>Welcome to SvelteKit</h1>
-  <p>
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-  </p>
+  <main class="py-8">
+    <div id="title" class="flex items-center justify-between">
+      <h1 class="text-neutral-800 text-3xl font-bold">Stays in Finland</h1>
+      <p>+stays</p>
+    </div>
+    <div id="content" class="py-5">
+      <Stay />
+    </div>
+  </main>
 </div>
 
 <style>
