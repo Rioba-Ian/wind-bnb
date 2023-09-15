@@ -5,27 +5,27 @@
 </script>
 
 {#if isOpen}
-  <div class="modal absolute bg-white w-full">
+  <div class="modal absolute top-0 z-10 h-[12vmax] bg-white w-full border-b-0">
     <div class="modal-content">
       <span
-        class="close text-3xl ml-auto"
+        class="close text-3xl cursor-pointer absolute top-0 right-0 pr-6 pt-2"
         aria-roledescription="close modal"
         on:click={close}>&times;</span
       >
 
       <!-- add search functionality here -->
-      <div class="">
+      <div class="p-[5vmin]">
         <form action="" class="flex items-center justify-between">
           <div class="relative z-0 w-1/3">
             <input
               type="text"
               id="floating_standard"
-              class="block py-2 px-1 w-full text-gray-900 bg-transparent focus-within:border-2 border-gray-300 rounded-xl appearance-none focus:outline-none focus:ring-0 peer"
+              class="block py-2 px-1 w-full text-gray-900 bg-transparent border-2 rounded-sm focus-within:border-4 focus-within:border-gray-500 focus-within:rounded-xl appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=" "
             />
             <label
               for="floating_standard"
-              class="absolute px-2 text-gray-500 dark:text-gray-800 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-900 peer-placeholder-shown:scale-300 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+              class="absolute px-2 text-gray-500 dark:text-gray-800 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-900 peer-placeholder-shown:scale-300 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
               >LOCATION</label
             >
           </div>
@@ -34,18 +34,18 @@
             <input
               type="text"
               id="floating_standard"
-              class="block py-2.5 px-1 w-full text-sm text-gray-900 bg-transparent border-0 focus-within:border-2 border-gray-300 rounded-xl appearance-none focus:outline-none focus:ring-0 peer"
+              class="block py-2.5 px-1 w-full text-sm text-gray-900 bg-transparent border-2 rounded-sm focus-within:border-4 focus-within:border-gray-500 focus-within:rounded-xl appearance-none focus:outline-none focus:ring-0 peer"
               placeholder=" "
             />
             <label
               for="floating_standard"
-              class="absolute px-2 text-gray-500 dark:text-gray-800 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-900 peer-placeholder-shown:scale-300 peer-focus:outline-2 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+              class="absolute px-2 text-gray-500 dark:text-gray-800 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-900 peer-placeholder-shown:scale-300 peer-focus:outline-2 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
               >GUESTS</label
             >
           </div>
 
           <div
-            class="w-1/3 flex items-center justify-center outline-black outline-1"
+            class="w-1/3 flex items-center justify-center border-2 border-gray-300 focus-within:border-gray-500"
           >
             <button
               type="submit"
