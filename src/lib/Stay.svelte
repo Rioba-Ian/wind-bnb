@@ -16,7 +16,7 @@
 </script>
 
 <article>
-  <img src={stay.photo} alt="stay.title" />
+  <img src={stay.photo} loading="lazy" alt="stay.title" />
 
   <div class="my-2 flex items-center justify-start">
     {#if stay.superHost}
